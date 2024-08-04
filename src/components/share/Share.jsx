@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from 'react'
-import {PermMedia,Label,Room, EmojiEmotions, Cancel} from '@material-ui/icons'
+import {PermMedia,Label,Room, EmojiEmotions, Cancel} from '@mui/icons-material'
 import pic from "../../../assets/profile/pic2.jpeg"; 
 import {Authcontext} from "../../context/authcontext"
 import axios from  'axios'

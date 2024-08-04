@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Search, Person, Chat, Notifications } from "@material-ui/icons";
+import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 import pic from "../../../assets/profile/pic2.jpeg"; // Import the image
 import 'tailwindcss/tailwind.css';
 import {Link}from "react-router-dom"

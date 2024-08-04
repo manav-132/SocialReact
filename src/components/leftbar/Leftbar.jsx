@@ -2,7 +2,7 @@ import React from 'react'
  import "../../index.css"
 import friend1 from "../../../assets/profile/pic-3.jpeg"
 import { Profile } from '../../../dummy'
-import { RssFeed,Chat,Duo,Group,Bookmark,Help,Work,Event,School }from '@material-ui/icons'
+import { RssFeed,Chat,Duo,Group,Bookmark,Help,Work,Event,School }from '@mui/icons-material'
 import Friend from '../friend/Friend'
 function Leftbar() {
   return (

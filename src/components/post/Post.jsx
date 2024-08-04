@@ -1,5 +1,5 @@
 import React, { useState ,useEffect, useContext} from 'react'
-import { LocalFlorist, MoreVert } from '@material-ui/icons';
+import { LocalFlorist, MoreVert } from '@mui/icons-material';
 import pic from "../../../assets/profile/pic2.jpeg"; 
 import post1 from "../../../assets/post/post-1.jpeg";
 import Like from "../../../assets/like.png";

@@ -7,7 +7,7 @@ import Online from '../online/Online';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Authcontext } from '../../context/authcontext';
-import {Add, Remove} from '@material-ui/icons'
+import {Add, Remove} from '@mui/icons-material'
 
 const PF="https://social-7tc4.onrender.com/images/"
 function Rightbar({user}) {
