@@ -7,7 +7,7 @@ import Online from '../online/Online';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Authcontext } from '../../context/authcontext';
-import {Add, Remove} from '@mui/icons-material'
+import { FaPlus, FaMinus } from 'react-icons/fa';
 
 const PF="https://social-7tc4.onrender.com/images/"
 function Rightbar({user}) {
@@ -100,7 +100,7 @@ const Profilerightbar=()=>{
   {user.username!== currentuser.username &&(
       <button id="rightbarfollowbutton" className='mt-8 mb-3 border-none bg-[#1872f2] text-white rounded-md px-1 py-2 flex items-center cursor-pointer font-medium' onClick={handelClick}>
         {!followed?"follow":"unfollow"}
-        {!followed?<Add />:<Remove />}
+        {!followed?<FaPlus />:<FaMinus />}
         
         </button>
     )}

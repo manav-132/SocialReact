@@ -1,5 +1,6 @@
 import React, { useState ,useEffect, useContext} from 'react'
-import { LocalFlorist, MoreVert } from '@mui/icons-material';
+import { GiFlowerPot } from 'react-icons/gi';
+import { MdMoreVert } from 'react-icons/md';
 import pic from "../../../assets/profile/pic2.jpeg"; 
 import post1 from "../../../assets/post/post-1.jpeg";
 import Like from "../../../assets/like.png";
@@ -51,7 +52,7 @@ function Post({post}) {
                 <span id="date" className='text-xs'>{format(post.createdAt)}</span>
             </div>
             <div id="posttopright">
-                <MoreVert />
+                <MdMoreVert />
             </div>
          </div>
                 <div id="postcenter" className='m-5 '>

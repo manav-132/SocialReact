@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Search, Person, Chat, Notifications } from "@mui/icons-material";
+import { FaSearch, FaUser, FaComment, FaBell } from 'react-icons/fa';
 import pic from "../../../assets/profile/pic2.jpeg"; // Import the image
 import 'tailwindcss/tailwind.css';
 import {Link}from "react-router-dom"
@@ -41,7 +41,7 @@ function Header() {
 
       <div id="headercenter" className='flex flex-grow'>
         <div id="searchbar" className='w-full h-8 bg-white rounded-3xl flex items-center'>
-          <Search className='text-lg ml-3' onClick={handelSearch}/>
+          <FaSearch className='text-lg ml-3' onClick={handelSearch}/>
           <input placeholder='search for friend, post, or video' className='border-none w-4/5 outline-none' onChange={handelChange}></input>
         </div>
       </div>
@@ -57,18 +57,18 @@ function Header() {
 
                 <div id="topbaricon" className='flex '>
                       <div id="topbariconitem" className='mr-4 cursor-pointer relative'>
-                        <Person />
+                        <FaUser />
                         <span id="topbaruiconbadge" className='flex items-center justify-center w-4 h-4 bg-red-500 rounded-full text-white absolute -top-1 -right-1 text-xs'>1</span>
 
                       </div>
 
                       <div id="topbariconitem" className='mr-4 cursor-pointer relative'>
-                        <Chat />
+                        <FaComment />
                         <span id="topbaruiconbadge" className='flex items-center justify-center w-4 h-4 bg-red-500 rounded-full text-white absolute -top-1 -right-1 text-xs'>2</span>
                       </div>
 
                       <div id="topbariconitem" className='mr-4 cursor-pointer relative'>
-                        <Notifications />
+                        <FaBell />
                         <span id="topbaruiconbadge" className='flex items-center justify-center w-4 h-4 bg-red-500 rounded-full text-white absolute -top-1 -right-1 text-xs'>1</span>
                       </div>
                 </div>

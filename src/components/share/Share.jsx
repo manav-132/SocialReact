@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from 'react'
-import {PermMedia,Label,Room, EmojiEmotions, Cancel} from '@mui/icons-material'
+import { FaPhotoVideo, FaTag, FaMapMarkerAlt, FaSmile, FaTimes } from 'react-icons/fa';
 import pic from "../../../assets/profile/pic2.jpeg"; 
 import {Authcontext} from "../../context/authcontext"
 import axios from  'axios'
@@ -50,22 +50,22 @@ function Share() {
             <form id="sharebottom" className='flex items-center justify-between' onSubmit={submitHandler}>
                 <div id="options" className='flex ml-5'>
                       <label htmlFor="file" className='flex items-center mr-4 cursor-pointer'>
-                        <PermMedia htmlColor="tomato" className='size-5 mr-1' />
+                        <FaPhotoVideo htmlColor="tomato" className='size-5 mr-1' />
                         <span className='text-sm font-medium'>Photo or Video</span>
                         <input style={{display:"none"}} type="file" id="file" accept=".png,.jpeg,.jpg" onChange={(e)=>{
                           setfile(e.target.files[0])
                         }} />
                       </label>
                       <div className='flex items-center mr-4 cursor-pointer'>
-                        <Label htmlColor="blue" className='size-5 mr-1' />
+                        <FaTag htmlColor="blue" className='size-5 mr-1' />
                         <span className='text-sm font-medium'>Tag</span>
                       </div>
                       <div className='flex items-center mr-4 cursor-pointer'>
-                        <Room htmlColor="green" className='size-5 mr-1'/>
+                        <FaMapMarkerAlt htmlColor="green" className='size-5 mr-1'/>
                         <span className='text-sm font-medium'>Location</span>
                       </div>
                       <div className='flex items-center mr-4 cursor-pointer'>
-                        <EmojiEmotions htmlColor="goldenrod" className='size-5 mr-1'/>
+                        <FaSmile htmlColor="goldenrod" className='size-5 mr-1'/>
                         <span className='text-sm font-medium'>Feelings</span>
                       </div>
                 </div>
