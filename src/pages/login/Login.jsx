@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useState } from 'react';
 import { loginCall } from '../../../apicalls';
 import { Authcontext } from '../../context/authcontext';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
     const email = useRef();
@@ -64,13 +65,12 @@ export default function Login() {
                         >
                             Log In
                         </button>
-                        <button
-                            type='button'
-                            className='h-16 rounded-xl border-none bg-[#42b72a] text-white text-xl font-medium cursor-pointer'
-                            onClick={() => window.location.href = "/register"}
+                        <Link
+                            to="/register"
+                            className='h-16 rounded-xl border-none bg-[#42b72a] text-white text-xl font-medium flex items-center justify-center mt-4'
                         >
                             Create a New Account
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </form>
